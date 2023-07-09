@@ -5,6 +5,7 @@ export const keyInfo = [
   { name: 'Residence', value: 'Nigeria' },
   { name: 'City', value: 'FCT, Abuja 901101' },
 ];
+
 export const spokenLanguages = [
   { name: 'English', value: 80 },
   { name: 'Igbo', value: 100 },
@@ -36,15 +37,15 @@ export const tools = [
     value: 9,
   },
   {
-    name:"Next.js",
+    name: 'Next.js',
     value: 10,
   },
   {
-    name:"Node.js",
+    name: 'Node.js',
     value: 10,
   },
   {
-    name:"TypeScript",
+    name: 'TypeScript',
     value: 10,
   },
   {
@@ -52,11 +53,108 @@ export const tools = [
     value: 9,
   },
   {
-    name:"Django",
+    name: 'Django',
     value: 10,
   },
   {
-    name:"JavaScript",
+    name: 'JavaScript',
     value: 10,
+  },
+];
+
+export const attributes = [
+  { value: '10', title: 'Years Experience', suffix: '+' },
+  { value: '143', title: 'Completed Projects', suffix: '' },
+  { value: '114', title: 'Happy Customers', suffix: '' },
+  { value: '20', title: 'Honors and Awards', suffix: '+' },
+];
+
+export const services = [
+  {
+    name: 'Front-End Development',
+    description:
+      'lorem ipsum dolor sit amet, consectetur adip eu nonummy just   et accusam et. Lorem ipsum dolor sit amet, consectetur',
+  },
+  {
+    name: 'Backend Development',
+    description:
+      'lorem ipsum dolor sit amet, consectetur adip eu nonummy just   et accusam et. Lorem ipsum dolor sit amet, consectetur',
+  },
+  {
+    name: 'Mobile App Development',
+    description:
+      'lorem ipsum dolor sit amet, consectetur adip eu nonummy just   et accusam et. Lorem ipsum dolor sit amet, consectetur',
+  },
+  {
+    name: 'Career Coaching',
+    description:
+      'lorem ipsum dolor sit amet, consectetur adip eu nonummy just   et accusam et. Lorem ipsum dolor sit amet, consectetur',
+  },
+  {
+    name: 'Bug Fixes',
+    description:
+      'lorem ipsum dolor sit amet, consectetur adip eu nonummy just   et accusam et. Lorem ipsum dolor sit amet, consectetur',
+  },
+  {
+    name: 'Maintenance & Optimization',
+    description:
+      'lorem ipsum dolor sit amet, consectetur adip eu nonummy just   et accusam et. Lorem ipsum dolor sit amet, consectetur',
+  },
+];
+
+export const projects = [
+  {
+    title: 'Project title',
+    description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
+    bannerUrl:
+      'https://elanta.app/nazar/arter-demo-new/img/works/thumbnail/5.jpg',
+  },
+  {
+    title: 'Project title',
+    description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
+    bannerUrl:
+      'https://elanta.app/nazar/arter-demo-new/img/works/thumbnail/5.jpg',
+  },
+  {
+    title: 'Project title',
+    description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
+    bannerUrl:
+      'https://elanta.app/nazar/arter-demo-new/img/works/thumbnail/5.jpg',
+  },
+  {
+    title: 'Project title',
+    description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
+    bannerUrl:
+      'https://elanta.app/nazar/arter-demo-new/img/works/thumbnail/5.jpg',
+  },
+  {
+    title: 'Project title',
+    description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
+    bannerUrl:
+      'https://elanta.app/nazar/arter-demo-new/img/works/thumbnail/5.jpg',
+  },
+  {
+    title: 'Project title',
+    description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
+    bannerUrl:
+      'https://elanta.app/nazar/arter-demo-new/img/works/thumbnail/5.jpg',
+  },
+  {
+    title: 'Project title',
+    description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
+    bannerUrl:
+      'https://elanta.app/nazar/arter-demo-new/img/works/thumbnail/5.jpg',
+  },
+  {
+    title: 'Project title',
+    description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
+    bannerUrl:
+      'https://elanta.app/nazar/arter-demo-new/img/works/thumbnail/5.jpg',
+  },
+  {
+    title: 'Project title',
+    description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
+    bannerUrl:
+      'https://elanta.app/nazar/arter-demo-new/img/works/thumbnail/5.jpg',
   },
 ];

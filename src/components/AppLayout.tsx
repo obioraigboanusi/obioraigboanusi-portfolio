@@ -5,9 +5,9 @@ function AppLayout({ children }: any) {
     <div className="flex gap-4">
       <Sidebar />
       <section>
-        <nav>nav bar</nav>
+        {/* <nav>nav bar</nav> */}
         {children}
-        <footer>footer</footer>
+        {/* <footer>footer</footer> */}
       </section>
     </div>
   );

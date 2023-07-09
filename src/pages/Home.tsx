@@ -1,9 +1,17 @@
-import React from 'react'
+import Hero from '../components/Hero';
+import Portfolio from '../components/Portfolio';
+import Services from '../components/Services';
 
 function Home() {
   return (
-    <div>Home</div>
-  )
+    <section>
+      <div className="max-h-screen overflow-y-scroll no-scrollbar">
+        <Hero />
+        <Services />
+        <Portfolio />
+      </div>
+    </section>
+  );
 }
 
-export default Home
+export default Home;

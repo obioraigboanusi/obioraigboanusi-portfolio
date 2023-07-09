@@ -2,18 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer utilities {
-    @variants responsive {
-      /* Hide scrollbar for Chrome, Safari and Opera */
-      .no-scrollbar::-webkit-scrollbar {
-          display: none;
-      }
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
 
-      /* Hide scrollbar for IE, Edge and Firefox */
-      .no-scrollbar {
-          -ms-overflow-style: none;  /* IE and Edge */
-          scrollbar-width: none;  /* Firefox */
-      }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
     }
   }
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+.btn {
+  @apply py-2 px-4 rounded;
+}
+
+.btn-default {
+  @apply font-semibold opacity-50;
+}
+.btn-default:hover {
+  @apply opacity-100;
+}
+.btn-primary {
+  @apply bg-blue-500 text-white;
+}
+.btn-primary:hover {
+  @apply bg-blue-700;
+}
+
+.container{
+  @apply py-20 px-20;
+}
