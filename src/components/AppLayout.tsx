@@ -2,13 +2,13 @@ import Sidebar from './Sidebar';
 
 function AppLayout({ children }: any) {
   return (
-    <div className="flex gap-4">
+    <div className="flex">
       <Sidebar />
-      <section>
+      <div className="max-h-screen overflow-y-scroll no-scrollbar">
         {/* <nav>nav bar</nav> */}
         {children}
         {/* <footer>footer</footer> */}
-      </section>
+      </div>
     </div>
   );
 }

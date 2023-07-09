@@ -5,11 +5,9 @@ import Services from '../components/Services';
 function Home() {
   return (
     <section>
-      <div className="max-h-screen overflow-y-scroll no-scrollbar">
-        <Hero />
-        <Services />
-        <Portfolio />
-      </div>
+      <Hero />
+      <Services />
+      <Portfolio />
     </section>
   );
 }

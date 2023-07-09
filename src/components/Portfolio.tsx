@@ -1,12 +1,45 @@
+import { useState, useEffect } from 'react';
 import { projects } from '../utils';
 
 function Portfolio() {
+  const [filteredProjects, setFilteredProjects] = useState(projects);
+  const [activeCategory, setActiveCategory] = useState('All');
+
+  const projectCategories = projects.reduce<string[]>(
+    (previousValue: string[], curr) => {
+      return [...previousValue, ...curr.categories];
+    },
+    [],
+  );
+
+  const categories = ['All', ...new Set(projectCategories)];
+
+  useEffect(() => {
+    if (activeCategory !== 'All') {
+      const filtered = projects.filter(project =>
+        project.categories.includes(activeCategory),
+      );
+      setFilteredProjects(filtered);
+    } else {
+      setFilteredProjects(projects);
+    }
+  }, [activeCategory]);
+
   return (
     <section>
-      <div className="px-20">
-        <h2 className="text-4xl font-bold mb-4">Portfolio</h2>
+      <div className="container">
+        <div className="flex justify-between items-center">
+          <h2 className="text-4xl font-bold mb-4">Portfolio</h2>
+          <ul className="flex gap-3">
+            {categories.map((name: string) => (
+              <li key={name}>
+                <button onClick={() => setActiveCategory(name)}>{name}</button>
+              </li>
+            ))}
+          </ul>
+        </div>
         <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map(({ title, description, bannerUrl }, i) => (
+          {filteredProjects.map(({ title, description, bannerUrl }, i) => (
             <li key={title + i}>
               <div className="group relative overflow-hidden min-h-[300px]">
                 <img

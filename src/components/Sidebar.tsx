@@ -6,7 +6,7 @@ import HorizontalProgress from './HorizontalProgress';
 function Sidebar() {
   return (
     <aside>
-      <div className="max-w-[250px] w-[30vw] max-h-screen h-screen flex flex-col relative">
+      <div className="max-w-[250px] w-[30vw] max-h-screen h-screen flex flex-col relative border">
         <div className="flex flex-col items-center text-center py-10 sticky top-0 bg-[#fff]">
           <div className="w-[90px] h-[90px] mb-4 rounded-full">
             <img
@@ -75,8 +75,8 @@ function Sidebar() {
         </div>
         <div className="lg:px-7 py-5 sticky bottom-0 bg-white">
           <ul className="flex justify-between">
-            {socials.map(({ url, icon }) => (
-              <li>
+            {socials.map(({ name, url, icon }) => (
+              <li key={name}>
                 <a href={url} target="_blank" rel="noopener noreferrer">
                   {icon}
                 </a>
@@ -88,9 +88,5 @@ function Sidebar() {
     </aside>
   );
 }
-
-
-
-
 
 export default Sidebar;

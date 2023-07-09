@@ -4,7 +4,7 @@ import { attributes } from '../utils';
 function Hero() {
   return (
     <header>
-      <div className="p-20">
+      <div className="px-10 py-16">
         <div className="flex items-center gap-4">
           <div className="w-1/2">
             <div>
@@ -25,10 +25,10 @@ function Hero() {
             <img src={face2} alt="Obiora Igboanusi" className="w-1/2" />
           </div>
         </div>
-        <div className="py-10">
+        <div className="mt-16">
           <ul className="flex justify-between items-center">
             {attributes.map(({ title, value, suffix }) => (
-              <li>
+              <li key={title}>
                 <div className="flex gap-4 items-center">
                   <span className="text-[#FFC107] font-bold text-2xl mb-0">
                     {value + suffix}

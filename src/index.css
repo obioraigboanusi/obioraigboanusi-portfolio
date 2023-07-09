@@ -39,5 +39,5 @@ html {
 }
 
 .container{
-  @apply py-20 px-20;
+  @apply py-16 px-10;
 }

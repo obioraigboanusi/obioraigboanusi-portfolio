@@ -102,59 +102,75 @@ export const services = [
   },
 ];
 
+const { fullstack, frontend, backend, mobileApp } = {
+  fullstack: 'Fullstack',
+  frontend: 'Frontend',
+  backend: 'Backend',
+  mobileApp: 'Mobile Application',
+};
+
 export const projects = [
   {
     title: 'Project title',
     description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
     bannerUrl:
       'https://elanta.app/nazar/arter-demo-new/img/works/thumbnail/5.jpg',
+    categories: [frontend],
   },
   {
     title: 'Project title',
     description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
     bannerUrl:
       'https://elanta.app/nazar/arter-demo-new/img/works/thumbnail/5.jpg',
+    categories: [backend],
   },
   {
     title: 'Project title',
     description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
     bannerUrl:
       'https://elanta.app/nazar/arter-demo-new/img/works/thumbnail/5.jpg',
+    categories: [frontend],
   },
   {
     title: 'Project title',
     description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
     bannerUrl:
       'https://elanta.app/nazar/arter-demo-new/img/works/thumbnail/5.jpg',
+    categories: [frontend],
   },
   {
     title: 'Project title',
     description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
     bannerUrl:
       'https://elanta.app/nazar/arter-demo-new/img/works/thumbnail/5.jpg',
+    categories: [frontend],
   },
   {
     title: 'Project title',
     description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
     bannerUrl:
       'https://elanta.app/nazar/arter-demo-new/img/works/thumbnail/5.jpg',
+    categories: [backend],
   },
   {
     title: 'Project title',
     description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
     bannerUrl:
       'https://elanta.app/nazar/arter-demo-new/img/works/thumbnail/5.jpg',
+    categories: [fullstack],
   },
   {
     title: 'Project title',
     description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
     bannerUrl:
       'https://elanta.app/nazar/arter-demo-new/img/works/thumbnail/5.jpg',
+    categories: [frontend],
   },
   {
     title: 'Project title',
     description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
     bannerUrl:
       'https://elanta.app/nazar/arter-demo-new/img/works/thumbnail/5.jpg',
+    categories: [mobileApp],
   },
 ];
