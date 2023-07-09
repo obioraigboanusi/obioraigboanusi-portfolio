@@ -8,12 +8,16 @@ function Sidebar() {
     <aside>
       <div className="max-w-[250px] w-[30vw] max-h-screen h-screen flex flex-col relative">
         <div className="flex flex-col items-center text-center py-10 sticky top-0 bg-[#fff]">
-          <div className="w-[90px] h-[90px] mb-4">
+          <div className="w-[90px] h-[90px] mb-4 rounded-full">
             <img
               src={face}
               alt="Obiora Igboanusi"
               className="rounded-full h-full w-full object-cover"
             />
+            <span className="relative flex h-3 w-3 top-0 left-full">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+            </span>
           </div>
           <div>
             <h2 className="font-bold">Obiora Igboanusi</h2>
