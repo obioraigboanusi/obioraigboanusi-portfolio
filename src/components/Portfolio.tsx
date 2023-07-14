@@ -2,7 +2,13 @@ import { useState, useEffect } from 'react';
 import { projects } from '../utils';
 
 function Portfolio() {
-  const [filteredProjects, setFilteredProjects] = useState(projects);
+  const [filteredProjects, setFilteredProjects] = useState<
+    {
+      bannerUrl: string;
+      title: string;
+      description: string;
+    }[]
+  >(projects);
   const [activeCategory, setActiveCategory] = useState('All');
 
   const projectCategories = projects.reduce<string[]>(
@@ -41,20 +47,7 @@ function Portfolio() {
         <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects.map(({ title, description, bannerUrl }, i) => (
             <li key={title + i}>
-              <div className="group relative overflow-hidden min-h-[300px]">
-                <img
-                  src={bannerUrl}
-                  alt={title}
-                  className="absolute object-cover h-full hover:scale-110 transition-all duration-500"
-                />
-                <div className="absolute bottom-[-100%] group-hover:bottom-0 transition-all duration-500 bg-[#fff] w-full p-2 ">
-                  <h3 className="text-base font-semibold mb-1">{title}</h3>
-                  <p className="text-sm text-slate-700">{description}</p>
-                  <button className="font-semibold my-1 text-sm">
-                    Order Now
-                  </button>
-                </div>
-              </div>
+              <ProjectItem {...{ title, description, bannerUrl }} />
             </li>
           ))}
         </ul>
@@ -63,4 +56,28 @@ function Portfolio() {
   );
 }
 
+const ProjectItem = ({
+  bannerUrl,
+  title,
+  description,
+}: {
+  bannerUrl: string;
+  title: string;
+  description: string;
+}) => {
+  return (
+    <div className={'group relative overflow-hidden min-h-[300px]'}>
+      <img
+        src={bannerUrl}
+        alt={title}
+        className="absolute object-cover h-full hover:scale-110 transition-all duration-500"
+      />
+      <div className="absolute bottom-[-100%] group-hover:bottom-0 transition-all duration-500 bg-[#fff] w-full p-2 ">
+        <h3 className="text-base font-semibold mb-1">{title}</h3>
+        <p className="text-sm text-slate-700">{description}</p>
+        <button className="font-semibold my-1 text-sm">Order Now</button>
+      </div>
+    </div>
+  );
+};
 export default Portfolio;
