@@ -17,6 +17,34 @@
   }
 }
 
+@keyframes pop-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+    /* display: inline-flex; */
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pop-out {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    /* display: inline-flex; */
+  }
+  99% {
+    transform: scale(0);
+    opacity: 0;
+    /* display: none !important; */
+  }
+  100% {
+    display: none;
+  }
+}
+
 html {
   scroll-behavior: smooth !important;
 }
@@ -38,6 +66,20 @@ html {
   @apply bg-blue-700;
 }
 
-.container{
-  @apply py-16 px-10;
+.container {
+  @apply py-16 px-10 max-w-screen-xl mx-auto;
+}
+footer .container {
+  @apply pt-0 pb-0 px-10;
+}
+
+.pop-in-card {
+  animation-name: pop-in;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.pop-out-card {
+  animation-name: pop-out;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }

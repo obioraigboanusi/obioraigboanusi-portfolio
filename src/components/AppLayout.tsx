@@ -1,15 +1,16 @@
+import Footer from './Footer';
 import Sidebar from './Sidebar';
 
 function AppLayout({ children }: any) {
   return (
-    <div className="flex">
-      <Sidebar />
+    <>
+      {/* <Sidebar /> */}
       <div className="max-h-screen overflow-y-scroll no-scrollbar">
         {/* <nav>nav bar</nav> */}
         {children}
-        {/* <footer>footer</footer> */}
+        <Footer />
       </div>
-    </div>
+    </>
   );
 }
 
