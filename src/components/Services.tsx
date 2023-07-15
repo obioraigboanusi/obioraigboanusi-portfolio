@@ -4,7 +4,13 @@ function Services() {
   return (
     <section>
       <div className="container">
-        <h2 className="text-4xl font-bold mb-4">Services</h2>
+        <header className="mb-6 text-center">
+          <h2 className="text-4xl font-bold mb-3">Services</h2>
+          <p className="text-slate-500 text-base leading-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+            adipisci.
+          </p>
+        </header>
         <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map(({ name, description }) => (
             <li key={name}>

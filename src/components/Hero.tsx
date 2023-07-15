@@ -4,10 +4,10 @@ import { attributes } from '../utils';
 function Hero() {
   return (
     <header>
-      <div className="px-10 py-16">
+      <div className="container">
         <div className="flex items-center gap-4">
           <div className="w-1/2">
-            <div>
+            <div className='py-20'>
               <h1 className="lg:text-5xl mb-3">
                 Discover my Amazing Art Space!
               </h1>
