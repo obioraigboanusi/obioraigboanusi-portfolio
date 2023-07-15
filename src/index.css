@@ -65,9 +65,11 @@ html {
 .btn-primary:hover {
   @apply bg-blue-700;
 }
-
 .container {
-  @apply py-16 px-10 max-w-screen-xl mx-auto;
+  @apply max-w-screen-xl mx-auto;
+}
+section .container {
+  @apply py-16 px-10;
 }
 footer .container {
   @apply pt-0 pb-0 px-10;

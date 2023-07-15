@@ -1,6 +1,9 @@
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 import { HiMail } from 'react-icons/hi';
-import work1 from "./assets/work-1.jpg"
+import aonomy from './assets/aonomy.png';
+import cherrystore from './assets/cherrystore.png';
+import digimakers from './assets/digimakers.png';
+import easybank from './assets/easybank.png';
 
 export const keyInfo = [
   { name: 'Residence', value: 'Nigeria' },
@@ -112,66 +115,82 @@ const { fullstack, frontend, backend, mobileApp } = {
 
 export const projects = [
   {
-    title: 'Project title',
-    description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
-    bannerUrl:
-      work1,
+    title: 'Aonomy',
+    description:
+      'A website that helps clients in clearing goods in and out of Nigerian ports.',
+    bannerUrl: aonomy,
     categories: [frontend],
+    url: 'https://www.aonomy.ng/',
   },
   {
-    title: 'Project title',
-    description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
-    bannerUrl:
-      work1,
+    title: 'DigiMakers',
+    description:
+      'The project involves design to development the online presence for a digital agency.',
+    bannerUrl: digimakers,
     categories: [backend],
+    url: 'https://luxt-tech-javascript-peer2.github.io/Digimakers-Landing-Page/',
   },
   {
-    title: 'Project title',
-    description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
-    bannerUrl:
-      work1,
+    title: 'Cherry Afican Store',
+    description:
+      'An e-commerce site for marketing african food stuffs in the UK.',
+    bannerUrl: cherrystore,
     categories: [frontend],
+    url: 'https://cherrysafricanstore.com/',
   },
   {
-    title: 'Project title',
-    description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
-    bannerUrl:
-      work1,
+    title: 'EasyBank Landing Page',
+    description: 'A responsive implementation of easybank landing page.',
+    bannerUrl: easybank,
     categories: [frontend],
+    url: 'https://obioraigboanusi.github.io/EasyBank-Landing-Page/',
   },
   {
-    title: 'Project title',
-    description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
-    bannerUrl:
-      work1,
+    title: 'Transactions HeatMap Chart',
+    description:
+      'A from-crash implementation of heatmap(Matrix chart) to visualize transactions data and see when people transact the most throughout a year.',
+    bannerUrl: easybank,
     categories: [frontend],
+    url: 'https://obioraigboanusi.github.io/EasyBank-Landing-Page/',
   },
   {
-    title: 'Project title',
-    description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
-    bannerUrl:
-      work1,
-    categories: [backend],
-  },
-  {
-    title: 'Project title',
-    description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
-    bannerUrl:
-      work1,
-    categories: [fullstack],
-  },
-  {
-    title: 'Project title',
-    description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
-    bannerUrl:
-      work1,
+    title: 'GitHub Users and Organizations',
+    description:
+      "This app allows user to view list of GitHub users' and organizations' profiles, search by username, and view the details of a profile with public repositories.",
+    bannerUrl: easybank,
     categories: [frontend],
+    url: 'https://obioraigboanusi.github.io/EasyBank-Landing-Page/',
   },
   {
-    title: 'Project title',
-    description: 'Sit amet, consectetur adipisicing elit. Quas, architecto.',
-    bannerUrl:
-      work1,
-    categories: [mobileApp],
+    title: 'React Countdown Timer',
+    description:
+      'A countdown timer that counts down in seconds, minutes, and hours.',
+    bannerUrl: easybank,
+    categories: [frontend],
+    url: 'https://obioraigboanusi.github.io/EasyBank-Landing-Page/',
+  },
+  {
+    title: 'React Chat App',
+    description:
+      'An app that allows users to send and receive messages on different tabs of the same browser.',
+    bannerUrl: easybank,
+    categories: [frontend],
+    url: 'https://obioraigboanusi.github.io/EasyBank-Landing-Page/',
+  },
+  {
+    title: 'Would-You-Rather Game',
+    description:
+      'Would-You-Rather is a React and Redux Application that allows a user to play the "Would You Rather?" Game.',
+    bannerUrl: easybank,
+    categories: [frontend],
+    url: 'https://obioraigboanusi.github.io/EasyBank-Landing-Page/',
+  },
+  {
+    title: 'MyReads',
+    description:
+      'MyReads is a React Application that help users manage their books.',
+    bannerUrl: easybank,
+    categories: [frontend],
+    url: 'https://obioraigboanusi.github.io/EasyBank-Landing-Page/',
   },
 ];
