@@ -1,9 +1,11 @@
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 import { HiMail } from 'react-icons/hi';
+import { TbBrandFiverr } from 'react-icons/tb';
 import aonomy from './assets/aonomy.png';
 import cherrystore from './assets/cherrystore.png';
 import digimakers from './assets/digimakers.png';
 import easybank from './assets/easybank.png';
+
 
 export const keyInfo = [
   { name: 'Residence', value: 'Nigeria' },
@@ -32,7 +34,12 @@ export const socials = [
     url: 'http://twitter.com/igboanusiobiora',
     icon: <FaTwitter />,
   },
-  { name: 'Email', url: 'mailto:obioraigboanusi@gmail.com', icon: <HiMail /> },
+  { name: 'Email', url: 'obioraigboanusi@gmail.com', icon: <HiMail /> },
+  {
+    name: 'Fiverr',
+    url: 'https://www.fiverr.com/obioraigboanusi',
+    icon: <TbBrandFiverr />,
+  },
 ];
 
 export const tools = [
@@ -193,4 +200,14 @@ export const projects = [
     categories: [frontend],
     url: 'https://obioraigboanusi.github.io/EasyBank-Landing-Page/',
   },
+];
+
+export const serviceAddOns = [
+  'Support 24/7',
+  'Fast Delivery',
+  'Dependability',
+  'Excellent Communication',
+  'Dependability',
+  'Excellent Communication',
+  'Excellent Communication',
 ];
