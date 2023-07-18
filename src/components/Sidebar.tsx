@@ -45,7 +45,7 @@ function Sidebar() {
             <div>
               <h3 className="text-sm mb-3">Spoken Languages</h3>
               <ul className="flex justify-between">
-                {spokenLanguages.map(({ name, value }) => (
+                {spokenLanguages.map(({ name }) => (
                   <li key={name} className="mb-3 w-1/3">
                     <div className="flex flex-col items-center">
                       <div className="w-[30px] mb-3">
