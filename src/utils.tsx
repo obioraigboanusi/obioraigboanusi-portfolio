@@ -5,6 +5,12 @@ import aonomy from './assets/aonomy.png';
 import cherrystore from './assets/cherrystore.png';
 import digimakers from './assets/digimakers.png';
 import easybank from './assets/easybank.png';
+import chatApp from './assets/chat-app.png';
+import heatMap from './assets/transactions-carter.png';
+import githubUsersOrgs from './assets/github-uo.png';
+import wouldYou from './assets/would-you.png';
+import myReads from './assets/myreads.png';
+import countDownTimer from './assets/countdowntimer.png';
 
 
 export const keyInfo = [
@@ -74,10 +80,10 @@ export const tools = [
 ];
 
 export const attributes = [
-  { value: '10', title: 'Years Experience', suffix: '+' },
-  { value: '143', title: 'Completed Projects', suffix: '' },
-  { value: '114', title: 'Happy Customers', suffix: '' },
-  { value: '20', title: 'Honors and Awards', suffix: '+' },
+  { value: '4', title: 'Years Experience', suffix: '+' },
+  { value: '65', title: 'Completed Projects', suffix: '+' },
+  { value: '45', title: 'Happy Customers', suffix: '+' },
+  { value: '10', title: 'Honors and Awards', suffix: '+' },
 ];
 
 export const services = [
@@ -156,23 +162,23 @@ export const projects = [
     title: 'Transactions HeatMap Chart',
     description:
       'A from-crash implementation of heatmap(Matrix chart) to visualize transactions data and see when people transact the most throughout a year.',
-    bannerUrl: easybank,
+    bannerUrl: heatMap,
     categories: [frontend],
-    url: 'https://obioraigboanusi.github.io/EasyBank-Landing-Page/',
+    url: 'https://transactions-heatmap.netlify.app',
   },
   {
     title: 'GitHub Users and Organizations',
     description:
       "This app allows user to view list of GitHub users' and organizations' profiles, search by username, and view the details of a profile with public repositories.",
-    bannerUrl: easybank,
+    bannerUrl: githubUsersOrgs,
     categories: [frontend],
-    url: 'https://obioraigboanusi.github.io/EasyBank-Landing-Page/',
+    url: 'https://github-users-and-organisations.netlify.app',
   },
   {
     title: 'React Countdown Timer',
     description:
       'A countdown timer that counts down in seconds, minutes, and hours.',
-    bannerUrl: easybank,
+    bannerUrl: countDownTimer,
     categories: [frontend],
     url: 'https://obioraigboanusi.github.io/EasyBank-Landing-Page/',
   },
@@ -180,25 +186,25 @@ export const projects = [
     title: 'React Chat App',
     description:
       'An app that allows users to send and receive messages on different tabs of the same browser.',
-    bannerUrl: easybank,
+    bannerUrl: chatApp,
     categories: [frontend],
-    url: 'https://obioraigboanusi.github.io/EasyBank-Landing-Page/',
+    url: 'https://channel-chat-app.netlify.app',
   },
   {
     title: 'Would-You-Rather Game',
     description:
       'Would-You-Rather is a React and Redux Application that allows a user to play the "Would You Rather?" Game.',
-    bannerUrl: easybank,
+    bannerUrl: wouldYou,
     categories: [frontend],
-    url: 'https://obioraigboanusi.github.io/EasyBank-Landing-Page/',
+    url: 'https://would-you-rather-proj.netlify.app',
   },
   {
     title: 'MyReads',
     description:
       'MyReads is a React Application that help users manage their books.',
-    bannerUrl: easybank,
+    bannerUrl: myReads,
     categories: [frontend],
-    url: 'https://obioraigboanusi.github.io/EasyBank-Landing-Page/',
+    url: 'https://myreads-proj.netlify.app',
   },
 ];
 

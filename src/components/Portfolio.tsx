@@ -54,7 +54,7 @@ function Portfolio() {
         </div>
         <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects
-            .slice(0, 6)
+            .slice(0)
             .map(({ title, description, bannerUrl, url }, i) => (
               <li key={title + i}>
                 <ProjectItem {...{ title, description, bannerUrl, url }} />

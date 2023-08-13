@@ -7,7 +7,7 @@ function Hero() {
       <div className="container">
         <div className="flex items-center gap-4">
           <div className="w-1/2">
-            <div className='py-20'>
+            <div className="py-20">
               <h1 className="lg:text-5xl mb-3">
                 Discover my Amazing Art Space!
               </h1>
@@ -22,7 +22,12 @@ function Hero() {
             </div>
           </div>
           <div className="w-1/2 flex justify-center">
-            <img src={face2} alt="Obiora Igboanusi" className="w-1/2" />
+            <img
+              style={{ transform: 'scaleX(-1)' }}
+              src={face2}
+              alt="Obiora Igboanusi"
+              className="w-1/2"
+            />
           </div>
         </div>
         <div className="mt-16">

@@ -6,22 +6,22 @@ interface IPage {
   url: string;
 }
 const pages: IPage[] = [
-  {
-    name: 'About',
-    url: '/about',
-  },
-  {
-    name: 'Blog',
-    url: '/blog',
-  },
-  {
-    name: 'Portfolio',
-    url: '/projects',
-  },
-  {
-    name: 'Education',
-    url: '/education',
-  },
+  // {
+  //   name: 'About',
+  //   url: '/about',
+  // },
+  // {
+  //   name: 'Blog',
+  //   url: '/blog',
+  // },
+  // {
+  //   name: 'Portfolio',
+  //   url: '/projects',
+  // },
+  // {
+  //   name: 'Education',
+  //   url: '/education',
+  // },
 ];
 
 function Footer() {
@@ -29,20 +29,22 @@ function Footer() {
     <footer className="relative bg-[rgb(226,232,240)]">
       <div className="container">
         <div className="pb-5 pt-10">
-          <nav className='mb-5'>
-            <ul className="flex flex-wrap justify-center items-center gap-4">
-              {pages.map(({ name, url }: IPage) => (
-                <li key={name}>
-                  <Link
-                    to={url}
-                    className="text-base leading-6 text-gray-500 hover:text-gray-900"
-                  >
-                    {name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
+          {pages.length > 0 && (
+            <nav className="mb-5">
+              <ul className="flex flex-wrap justify-center items-center gap-4">
+                {pages.map(({ name, url }: IPage) => (
+                  <li key={name}>
+                    <Link
+                      to={url}
+                      className="text-base leading-6 text-gray-500 hover:text-gray-900"
+                    >
+                      {name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )}
           <ul className="flex justify-center items-center gap-5 mt-3 mb-5">
             {socials.map(({ name, url, icon }) => (
               <li key={name}>
