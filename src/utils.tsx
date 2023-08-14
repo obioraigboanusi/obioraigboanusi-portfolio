@@ -140,7 +140,7 @@ export const projects = [
     description:
       'The project involves design to development the online presence for a digital agency.',
     bannerUrl: digimakers,
-    categories: [backend],
+    categories: [frontend],
     url: 'https://luxt-tech-javascript-peer2.github.io/Digimakers-Landing-Page/',
   },
   {
@@ -180,7 +180,7 @@ export const projects = [
       'A countdown timer that counts down in seconds, minutes, and hours.',
     bannerUrl: countDownTimer,
     categories: [frontend],
-    url: 'https://obioraigboanusi.github.io/EasyBank-Landing-Page/',
+    url: 'https://countdown-timer-obiora.netlify.app',
   },
   {
     title: 'React Chat App',
