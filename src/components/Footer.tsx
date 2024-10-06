@@ -59,8 +59,8 @@ function Footer() {
               </li>
             ))}
           </ul>
-          <p className="text-base text-center leading-6 text-center text-gray-400">
-            © 2021 Obiora Igboanusi. All rights reserved.
+          <p className="text-base text-center text-gray-400">
+            ©{new Date().getFullYear()} Obiora Igboanusi. All rights reserved.
           </p>
         </div>
       </div>

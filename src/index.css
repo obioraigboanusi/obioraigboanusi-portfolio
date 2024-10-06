@@ -69,13 +69,13 @@ html {
   @apply bg-blue-700;
 }
 .container {
-  @apply max-w-screen-xl mx-auto;
+  @apply max-w-screen-xl mx-auto px-4 md:px-8;
 }
 section .container {
-  @apply py-16 px-10;
+  @apply py-16;
 }
 footer .container {
-  @apply pt-0 pb-0 px-10;
+  @apply pt-0 pb-0;
 }
 
 .pop-in-card {
@@ -87,4 +87,8 @@ footer .container {
   animation-name: pop-out;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
+}
+
+h2 + p {
+  @apply text-slate-500 md:text-lg leading-relaxed max-w-2xl mx-auto;
 }

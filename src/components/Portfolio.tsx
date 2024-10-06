@@ -39,9 +39,10 @@ function Portfolio() {
         <div className="flex flex-col justify-between items-center">
           <header className="text-center mb-8">
             <h2 className="text-4xl font-bold mb-2">Portfolio</h2>
-            <p className="text-slate-500 text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-              reiciendis aperiam.
+            <p className="">
+              Discover a selection of my recent projects, demonstrating my
+              skills, experience, and key contributions to various teams and
+              initiatives.
             </p>
           </header>
           <ul className="flex gap-3 mb-6">
@@ -52,9 +53,9 @@ function Portfolio() {
             ))}
           </ul>
         </div>
-        <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center items-center">
           {filteredProjects
-            .slice(0)
+            .slice(0, 6)
             .map(({ title, description, bannerUrl, url }, i) => (
               <li key={title + i}>
                 <ProjectItem {...{ title, description, bannerUrl, url }} />

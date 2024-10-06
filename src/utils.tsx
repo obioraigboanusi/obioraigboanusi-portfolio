@@ -12,7 +12,6 @@ import wouldYou from './assets/would-you.png';
 import myReads from './assets/myreads.png';
 import countDownTimer from './assets/countdowntimer.png';
 
-
 export const keyInfo = [
   { name: 'Residence', value: 'Nigeria' },
   { name: 'City', value: 'FCT, Abuja 901101' },
@@ -90,32 +89,32 @@ export const services = [
   {
     name: 'Front-End Development',
     description:
-      'lorem ipsum dolor sit amet, consectetur adip eu nonummy just   et accusam et. Lorem ipsum dolor sit amet, consectetur',
+      'I specialize in building user-friendly and responsive web interfaces using modern technologies such as React, Angular, and TypeScript. From static websites to dynamic, interactive platforms, I ensure seamless performance across all devices.Transform your design ideas into fully functional and visually appealing digital experiences.',
   },
   {
     name: 'Backend Development',
     description:
-      'lorem ipsum dolor sit amet, consectetur adip eu nonummy just   et accusam et. Lorem ipsum dolor sit amet, consectetur',
+      "From database design to API integration, I build secure and scalable backends tailored to your project's specific needs. Leveraging technologies like Node.js, Express, and MongoDB, I create robust systems that ensure optimal performance and security. Power your application with a reliable backend infrastructure",
   },
   {
     name: 'Mobile App Development',
     description:
-      'lorem ipsum dolor sit amet, consectetur adip eu nonummy just   et accusam et. Lorem ipsum dolor sit amet, consectetur',
+      "Whether you're targeting Android, iOS, or both, I create cross-platform mobile apps with React Native. These apps are designed to deliver smooth performance, intuitive user interfaces, and a consistent experience across different devices. Reach your audience anywhere with powerful mobile applications.",
   },
   {
     name: 'Career Coaching',
     description:
-      'lorem ipsum dolor sit amet, consectetur adip eu nonummy just   et accusam et. Lorem ipsum dolor sit amet, consectetur',
+      'Looking to break into tech or elevate your software development career? I offer personalized career coaching sessions to guide you through building your portfolio, improving your coding skills, or navigating job opportunities in the tech industry.Unlock your potential with tailored career guidance and advice.',
   },
   {
     name: 'Bug Fixes',
     description:
-      'lorem ipsum dolor sit amet, consectetur adip eu nonummy just   et accusam et. Lorem ipsum dolor sit amet, consectetur',
+      'Need urgent bug fixes for your web or mobile application? I offer fast and efficient troubleshooting services to identify and resolve issues, ensuring your platform runs smoothly without disruptions. Resolve issues quickly and keep your project running efficiently.',
   },
   {
     name: 'Maintenance & Optimization',
     description:
-      'lorem ipsum dolor sit amet, consectetur adip eu nonummy just   et accusam et. Lorem ipsum dolor sit amet, consectetur',
+      "Keep your website or application running smoothly with ongoing maintenance and performance optimization services. I monitor, update, and fine-tune your system to ensure it's always at peak performance, scalable, and secure. Ensure long-term success with regular maintenance and optimization.",
   },
 ];
 
@@ -205,6 +204,57 @@ export const projects = [
     bannerUrl: myReads,
     categories: [frontend],
     url: 'https://myreads-proj.netlify.app',
+  },
+];
+
+const notWorking = [
+  {
+    title: 'Last Postscript',
+    description:
+      'A celebration of life company, storing everything that is important for the world to remember you by.',
+    skills: ' Next.js, Node.js, AWS, REST API',
+    bannerUrl: myReads,
+    categories: [fullstack],
+    url: 'http://last-postscript-frontend.herokuapp.com',
+    timeline: '2022',
+  },
+  {
+    title: 'Poppers',
+    description:
+      'Poppers is a place to discover new dresses, lehenga, and everything in fashion, beauty, and lifestyle at one place and find new styles with honest reviews about the store and outfits!',
+    skills: 'Next.js, GraphSCM, AWS, GraphQL',
+    bannerUrl: myReads,
+    categories: [fullstack],
+    url: 'https://www.poppers.link/',
+    timeline: '2022',
+  },
+  {
+    title: 'Kaizen Apps Portfolio',
+    description:
+      'It is a portfolio website built with React, Bootstrap and CSS, It enables users to know more about Kaizen Apps, their services, previous works and contact them.',
+    skills: 'React',
+    bannerUrl: myReads,
+    categories: [frontend],
+    url: 'https://www.poppers.link/',
+    timeline: '2022',
+  },
+  {
+    title: 'Kondo',
+    description: `Kondo is a real estate e-commerce website that enables users to view list of homes, details of a home, schedule to tour, apply to rent a home, list properties, pay for rent, and many favorites and property applications.
+
+Tools Used: 
+ - Next.js
+ - React Hooks
+ - TypeScript
+ - Nest.js
+ - Redux Toolkit
+ - Styled Components
+ - CSS3`,
+    skills: 'React',
+    bannerUrl: myReads,
+    categories: [frontend],
+    url: 'https://www.poppers.link/',
+    timeline: '2021',
   },
 ];
 
