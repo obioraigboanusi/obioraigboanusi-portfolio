@@ -36,8 +36,8 @@ function Portfolio() {
   return (
     <section>
       <div className="container">
-        <div className="flex flex-col justify-between items-center">
-          <header className="text-center mb-8">
+        <div className="flex flex-col justify-between ">
+          <header className="mb-8">
             <h2 className="text-4xl font-bold mb-2">Portfolio</h2>
             <p className="">
               Discover a selection of my recent projects, demonstrating my
@@ -45,7 +45,7 @@ function Portfolio() {
               initiatives.
             </p>
           </header>
-          <ul className="flex gap-3 mb-6">
+          <ul className="flex gap-3 mb-6 justify-end">
             {categories.map((name: string) => (
               <li key={name}>
                 <button onClick={() => setActiveCategory(name)}>{name}</button>
@@ -53,15 +53,21 @@ function Portfolio() {
             ))}
           </ul>
         </div>
-        <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center items-center">
+        <ul className="grid grid-cols-1 gap-6 md:gap-20">
           {filteredProjects
-            .slice(0, 6)
+            .slice(0, 3)
             .map(({ title, description, bannerUrl, url }, i) => (
               <li key={title + i}>
-                <ProjectItem {...{ title, description, bannerUrl, url }} />
+                <ProjectItem
+                  {...{ title, description, bannerUrl, url }}
+                  odd={(i + 1) % 2 !== 0}
+                />
               </li>
             ))}
         </ul>
+        <div className="text-center mt-10">
+          <button className="btn btn-primary">See more</button>
+        </div>
       </div>
     </section>
   );

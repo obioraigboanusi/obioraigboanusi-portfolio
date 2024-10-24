@@ -12,14 +12,14 @@ function Services() {
             digital needs.
           </p>
         </header>
-        <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <ul className="grid md:grid-cols-2 gap-6">
           {services.map(({ name, description }) => (
             <li key={name}>
               <div className="px-6 py-8 border">
                 <h3 className="text-lg md:text-xl font-semibold mb-2">
                   {name}
                 </h3>
-                <p className="text-sm md:text-base text-slate-700">
+                <p className="text-sm md:text-base text-[#C7C7C7]">
                   {description}
                 </p>
                 {/* <button className="btn-default mt-2">Order Now</button> */}

@@ -26,39 +26,9 @@ const pages: IPage[] = [
 
 function Footer() {
   return (
-    <footer className="relative bg-[rgb(226,232,240)]">
+    <footer className="relative border-t border-gray-600">
       <div className="container">
-        <div className="pb-5 pt-10">
-          {pages.length > 0 && (
-            <nav className="mb-5">
-              <ul className="flex flex-wrap justify-center items-center gap-4">
-                {pages.map(({ name, url }: IPage) => (
-                  <li key={name}>
-                    <Link
-                      to={url}
-                      className="text-base leading-6 text-gray-500 hover:text-gray-900"
-                    >
-                      {name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          )}
-          <ul className="flex justify-center items-center gap-5 mt-3 mb-5">
-            {socials.map(({ name, url, icon }) => (
-              <li key={name}>
-                <a
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xl text-slate-500 hover:text-slate-700"
-                >
-                  {icon}
-                </a>
-              </li>
-            ))}
-          </ul>
+        <div className="py-5  ">
           <p className="text-base text-center text-gray-400">
             ©{new Date().getFullYear()} Obiora Igboanusi. All rights reserved.
           </p>

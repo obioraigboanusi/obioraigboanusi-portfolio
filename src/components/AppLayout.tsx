@@ -1,12 +1,11 @@
 import Footer from './Footer';
 import Navbar from './Navbar';
-import Sidebar from './Sidebar';
 
 function AppLayout({ children }: any) {
   return (
-    <div className="min-h-screen flex flex-col ">
+    <div className="min-h-screen flex flex-col bg-[#0A0A0A] text-white">
       <Navbar />
-      <div className=""> {children}</div>
+      <div className="grow"> {children}</div>
       <Footer />
     </div>
   );

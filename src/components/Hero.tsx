@@ -1,44 +1,48 @@
-import face2 from '../assets/face-2.png';
+import face2 from '../assets/avatar.png';
 import { attributes } from '../utils';
 
 function Hero() {
   return (
     <header>
       <div className="container">
-        <div className="flex items-center gap-4">
-          <div className="w-1/2">
-            <div className="py-20">
-              <h1 className="lg:text-5xl mb-3">
-                Discover my Amazing Art Space!
-              </h1>
-              <p className="text-slate-700">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Necessitatibus debitis facilis, eaque eveniet aliquid provident?
-              </p>
-              <div className="flex gap-4 mt-5">
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-12 md:gap-5 py-5 md:py-20">
+          <div className="">
+            <div className="space-y-10">
+              <div>
+                <h1 className="text-3xl lg:text-4xl mb-3 font-black">
+                  Hi, I'm Obiora Igboanusi
+                </h1>
+                <p className="text-2xl lg:text-4xl mb-6 font-black text-purple-800">
+                  Frontend Developer
+                </p>
+                <p className="text-[#C7C7C7] text-lg">
+                  I craft seamless, intuitive digital experiences that bring
+                  ideas to life and keep users engaged.
+                </p>
+              </div>
+              <div className="flex gap-5">
                 <button className="btn btn-primary">Learn More</button>
                 <button className="btn btn-default">Download CV</button>
               </div>
             </div>
           </div>
-          <div className="w-1/2 flex justify-center">
+          <div className="max-w-[300px] lg:max-w-[170px] max-h-[300px] lg:max-h-[170px] rounded-lg bg-blue-100 border-2">
             <img
-              style={{ transform: 'scaleX(-1)' }}
               src={face2}
               alt="Obiora Igboanusi"
-              className="w-1/2"
+              className=" rounded-lg object-center"
             />
           </div>
         </div>
         <div className="mt-16">
-          <ul className="flex justify-between items-center">
+          <ul className="flex justify-between items-center flex-wrap">
             {attributes.map(({ title, value, suffix }) => (
               <li key={title}>
-                <div className="flex gap-4 items-center">
+                <div className="flex flex-col gap-2">
                   <span className="text-[#FFC107] font-bold text-2xl mb-0">
                     {value + suffix}
                   </span>
-                  <span className="mb-0">{title}</span>
+                  <span className="mb-0 font-medium text-lg">{title}</span>
                 </div>
               </li>
             ))}

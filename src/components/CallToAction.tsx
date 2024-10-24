@@ -1,8 +1,4 @@
-import { useState, useEffect } from 'react';
-import { serviceAddOns, socials } from '../utils';
-import { FaCheck, FaCopy } from 'react-icons/fa';
-import { HiExternalLink } from 'react-icons/hi';
-import { AiOutlineCheckCircle } from 'react-icons/ai';
+import { markets, socials } from '../utils';
 
 interface ISocial {
   name: string;
@@ -10,143 +6,77 @@ interface ISocial {
   icon: JSX.Element;
 }
 
-function CallToAction() {
-  const [activeSocial, setActiveSocial] = useState<ISocial>(socials[0]);
+const CallToAction = () => {
+  const email = 'obiora.igboanusi@gmail.com';
 
   return (
-    <section className="h-max w-full bg-fixed bg-[url('./assets/bg1.jpg')] bg-cover bg-center">
-      <div className="backdrop-brightness-50 text-white">
-        <div className="container ">
-          <div className="flex justify-center text-center">
-            <div className="lg:w-4/5 flex flex-col items-center">
-              <h2 className="text-4xl font-bold mb-2 leading-20">
-                A perfect team member could make the difference!
-              </h2>
-              <p className="text-sm mb-5 text-slate-200">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                error cumque unde vitae sapiente enim aut id nemo ducimus
-                aliquam. Ex doloribus in aut tempora, ratione debitis non cum
-                recusandae aliquid officiis nobis numquam sapiente dolor, hic
-                consequuntur accusamus quaerat.
-              </p>
-              <ul className="grid grid-cols-3 gap-5 text-slate-200">
-                {serviceAddOns.map(addon => (
-                  <li key={addon} className="">
-                    <div className="flex items-start gap-2 leading-none text-sm">
-                      <span className='text-[purple]'>
-                        <AiOutlineCheckCircle />
-                      </span>
-                      <span>{addon}</span>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-              <div>
-                {/* <h3 className="text-lg font-semibold my-3">
-                  Let's get in touch...
-                </h3> */}
-                <ul className="flex items-center gap-4 mt-7">
-                  {socials.map((social: ISocial) => (
-                    <li>
-                      <button
-                        onClick={() => setActiveSocial(social)}
-                        className={[
-                          'flex items-center gap-2 btn-default',
-                        //   activeSocial?.name === social.name && 'active',
-                        ].join(' ')}
-                      >
-                        <span className="text-lg">{social.icon}</span>
-                        <span className="font-semibold">{social.name}</span>
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+    <section>
+      <div className="container">
+        <div className="grid md:grid-cols-2">
+          <div className="">
+            <h2 className="text-3xl font-bold uppercase mb-4">
+              Let&apos;s connect <br />
+              and Collaborate
+            </h2>
+            <p className="text-lg mb-[40px]">
+              Say hello at
+              <a
+                href={`mailto:${email}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-[0.5em] hover:text-primary text-[#77ba1e]"
+              >
+                {email}
+              </a>
+              <br /> For more info, here&apos;s my{' '}
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary text-[#77ba1e]"
+              >
+                resume
+              </a>
+            </p>
+            <div className="flex item-center gap-6">
+              {socials.map(({ name, url, icon }: ISocial) => (
+                <a
+                  href={url}
+                  className="text-primary rounded-lg  text-2xl  transition-all duration-300 ease-in-out"
+                >
+                  <span> {icon}</span> <span className="sr-only">{name}</span>
+                </a>
+              ))}
             </div>
-            {/* <div className="lg:w-1/2"> */}
-              {/* <h3 className="text-2xl font-semibold mb-8">
-                Let's get in touch...
-              </h3>
-              <ul className="flex items-center gap-4">
-                {socials.map((social: ISocial) => (
-                  <li>
-                    <button
-                      onClick={() => setActiveSocial(social)}
-                      className={[
-                        'flex items-center gap-2 btn-default',
-                        activeSocial?.name === social.name && 'active',
-                      ].join(' ')}
-                    >
-                      <span className="text-lg">{social.icon}</span>
-                      <span className="font-semibold">{social.name}</span>
-                    </button>
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-4">
-                <label htmlFor="social-field" className="block text-sm">
-                  {activeSocial.name}:
-                </label>
-                <div className="flex gap-4">
-                  <input
-                    id="social-field"
-                    type="text"
-                    value={activeSocial.url}
-                    className="border px-2 text-xs h-8 rounded text-[#000]"
-                  />
-                  <CopyButton text={activeSocial.url} />
+          </div>
+          <div>
+            <p className="pb-4 font-bold">Buy my Services</p>
+            <ul className="space-y-4">
+              {markets.map(item => (
+                <li>
                   <a
-                    href={
-                      activeSocial.name === 'Email'
-                        ? `mailto:${activeSocial.url}`
-                        : activeSocial.url
-                    }
+                    href="http://"
                     target="_blank"
                     rel="noopener noreferrer"
-                    title="Visit"
-                    className="btn-default text-[1rem] flex items-center"
+                    className="bg-[#222222] rounded-md  relative h-[50px] p-[3px] flex group hover:bg-[#77ba1e5a] transition-all duration-150 ease-in-out"
                   >
-                    <span className="sr-only">Visit</span>
-                    <HiExternalLink />
+                    <div className=" w-[50px] h-full rounded flex items-center justify-center bg-[#4f8a03a7]">
+                      <span className="text-2xl"> {item.icon}</span>
+                    </div>
+                    <div className="flex items-center pl-4">
+                      <span className="group-hover:text-primary text-[#77ba1e] font-semibold ">
+                        {item.description}
+                      </span>
+                    </div>
                   </a>
-                </div>
-              </div> */}
-            {/* </div> */}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
     </section>
   );
-}
-function CopyButton({ text }: { text: string }) {
-  const [copied, setCopied] = useState(false);
+};
 
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText(text).then(() => {
-      setCopied(true);
-    });
-  };
-
-  useEffect(() => {
-    if (copied) {
-      setTimeout(() => {
-        setCopied(false);
-      }, 1000);
-    }
-  }, [copied]);
-
-  return (
-    <button
-      onClick={copyToClipboard}
-      className={[
-        'btn-default',
-        copied && 'text-green-700 border-green-400',
-      ].join(' ')}
-      title="Copy"
-      disabled={copied}
-    >
-      {copied ? <FaCheck /> : <FaCopy />}
-    </button>
-  );
-}
 export default CallToAction;

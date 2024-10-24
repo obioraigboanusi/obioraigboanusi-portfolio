@@ -21,7 +21,7 @@ function Sidebar() {
           </div>
           <div>
             <h2 className="font-bold">Obiora Igboanusi</h2>
-            <p className="text-xs text-slate-700">Software Developer</p>
+            <p className="text-xs text-[#C7C7C7]">Software Developer</p>
           </div>
         </div>
 
@@ -33,7 +33,7 @@ function Sidebar() {
                   <li key={item.name} className="mb-3">
                     <div className="flex items-center justify-between">
                       <h3 className="mb-0 text-sm">{item.name}:</h3>
-                      <span className="text-slate-700 text-xs mb-0">
+                      <span className="text-[#C7C7C7] text-xs mb-0">
                         {item.value}
                       </span>
                     </div>
@@ -51,7 +51,7 @@ function Sidebar() {
                       <div className="w-[30px] mb-3">
                         <CircularProgress />
                       </div>
-                      <h4 className="mb-0 text-xs text-slate-700">{name}</h4>
+                      <h4 className="mb-0 text-xs text-[#C7C7C7]">{name}</h4>
                     </div>
                   </li>
                 ))}
@@ -64,7 +64,7 @@ function Sidebar() {
                 {tools.map(({ name }) => (
                   <li key={name} className="mb-2">
                     <div>
-                      <h4 className="text-xs text-slate-700 mb-1">{name}</h4>
+                      <h4 className="text-xs text-[#C7C7C7] mb-1">{name}</h4>
                       <HorizontalProgress />
                     </div>
                   </li>

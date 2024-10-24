@@ -1,5 +1,11 @@
-import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
-import { HiMail } from 'react-icons/hi';
+import {
+  FaLinkedin,
+  FaGithub,
+  FaTwitter,
+  FaWhatsapp,
+  FaEnvelope,
+  FaPhone,
+} from 'react-icons/fa';
 import { TbBrandFiverr } from 'react-icons/tb';
 import aonomy from './assets/aonomy.png';
 import cherrystore from './assets/cherrystore.png';
@@ -22,6 +28,19 @@ export const spokenLanguages = [
   { name: 'Igbo', value: 100 },
   { name: 'German', value: 45 },
 ];
+const primaryContact = [
+  {
+    name: 'obioraigboanusi@gmail.com',
+    url: 'mailto:obioraigboanusi@gmail.com',
+    icon: <FaEnvelope />,
+  },
+  { name: '+2347032582254', url: 'tel:+2347032582254', icon: <FaPhone /> },
+  {
+    name: '+2347032582254',
+    url: 'https://wa.me/qr/PDTVLEOQGKK4K1',
+    icon: <FaWhatsapp />,
+  },
+];
 
 export const socials = [
   {
@@ -39,9 +58,23 @@ export const socials = [
     url: 'http://twitter.com/igboanusiobiora',
     icon: <FaTwitter />,
   },
-  { name: 'Email', url: 'obioraigboanusi@gmail.com', icon: <HiMail /> },
+];
+export const markets = [
   {
     name: 'Fiverr',
+    description: 'Buy on Fiverr',
+    url: 'https://www.fiverr.com/obioraigboanusi',
+    icon: <TbBrandFiverr />,
+  },
+  {
+    name: 'Upwork',
+    description: 'Buy on Upwork',
+    url: 'https://www.fiverr.com/obioraigboanusi',
+    icon: <TbBrandFiverr />,
+  },
+  {
+    name: 'Direct Contract',
+    description: 'Direct Contract',
     url: 'https://www.fiverr.com/obioraigboanusi',
     icon: <TbBrandFiverr />,
   },
@@ -266,4 +299,35 @@ export const serviceAddOns = [
   'Dependability',
   'Excellent Communication',
   'Excellent Communication',
+];
+
+export const testimonials = [
+  {
+    name: 'kiamesdavies',
+    title: 'Co-founder, Ezyapply',
+    feedback: `I'm extremely impressed with Obiora I's work in software development. His code expertise and attention to detail were outstanding, and his professionalism truly shined through. Working with him was a breeze; he was polite, quick to respond, and displayed a deep understanding of the project. 👏`,
+    platform: 'Fiverr',
+    country: 'United Kingdom',
+  },
+  {
+    name: 'Melissa J',
+    title: 'Project Manager, Beatsora',
+    feedback: `Great working with Obi! Very responsive and quick to deliver. We had a task we needed to be delivered promptly, and he did a fantastic job. If you want a developer for your project, highly recommend working with him!`,
+    platform: 'Fiverr',
+    country: 'United Kingdom',
+  },
+  {
+    name: 'ahmerm92',
+    title: 'Founder of Creative Agency',
+    feedback: `Had a great experience with Obiora. I was able to send him a document with requirements and he was able to identify, understanding, and ask detailed questions on anything I missed. He was also able to go above and beyond in addressing issues that I had overlooked. Thank you, I look forward to working with you again!`,
+    platform: 'Fiverr',
+    country: 'United States', // United Kingdom Flag
+  },
+  {
+    name: 'tomhem831',
+    title: 'Marketing Director at Global Corp',
+    feedback: `This man make a lot of optimization to my react application and prevent a lot of unnecessary rerenders in it. Took a bit more time for it, but it worth it. Highly recomend it as a profeesional in this area`,
+    platform: 'Fiverr',
+    country: 'Ukraine', // Australia Flag
+  },
 ];
